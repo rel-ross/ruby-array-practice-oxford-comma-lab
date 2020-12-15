@@ -7,7 +7,7 @@ new_string = ""
     new_string = array.join(" and ")
  elsif array.length > 2
     new_string = array[0..-2].join(', ')
-    new_string << ', and '
+    new_string << ', and #{array[-1].to_s}' 
     new_string << array[-1].to_s
   end
 end
